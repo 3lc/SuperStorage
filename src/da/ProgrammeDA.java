@@ -45,9 +45,9 @@ public class ProgrammeDA {
         
     }
         public void deleteRecord(String code){
-        String deleteStr = " DELETE FROM " + tableName + " WHERE Code=?)";
+        String DeleteStr = " DELETE FROM " + tableName + " WHERE Code=?)";
         try{
-            stmt = conn.prepareStatement(deleteStr);
+            stmt = conn.prepareStatement(DeleteStr);
             stmt.setString(1, code);
             stmt.executeUpdate();
         }catch (SQLException ex){
