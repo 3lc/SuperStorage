@@ -93,7 +93,7 @@ public class MaintainProgrammeFrame extends JFrame {
                 } else {
                     p = new Programme(code, jtfName.getText(), jtfFaculty.getText());
                     progControl.addRecord(p);
-                    JOptionPane.showMessageDialog(null, "New Programme Added.");
+                    JOptionPane.showMessageDialog(null, "Wew Programme Added.");
                     clearText();
 
                 }
